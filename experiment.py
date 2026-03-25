@@ -24,7 +24,7 @@ if user_input > 10:
 else
     print("Less or equal to 10")
 
-result = divide(10, 0)
+result = divide(10, 2)  # Use a non-zero divisor
 print("Result:", result)
 
 data = {"name": "John", "age": 25}
