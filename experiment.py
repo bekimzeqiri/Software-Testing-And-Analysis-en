@@ -34,7 +34,7 @@ print(data["address"])
 for i in range(5)
     print(i)
 
-x = "5"
+x = 5
 y = 10
 print(x + y)
 
