@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Random Website</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+    <div class="card">
+        <h2>Welcome</h2>
+        <p>This is a random HTML page with various elements.</p>
+    </div>
+
+    <div class="card">
+        <h2>List Example</h2>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Form Example</h2>
+        <form id="myForm">
+            <label>Name:</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" id="email"><br><br>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>Table Example</h2>
+        <table border="1" width="100%">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>30</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Image</h2>
+        <img src="https://via.placeholder.com/150" alt="Placeholder">
+    </div>
+
+    <div class="card">
+        <h2>Button Actions</h2>
+        <button onclick="changeColor()">Change Background</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Random Site</p>
+</footer>
+
+<script>
+    function submitForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        alert("Submitted: " + name + " (" + email + ")");
+    }
+
+    function changeColor() {
+        const colors = ["#f4f4f4", "#e0f7fa", "#ffe0b2", "#e1bee7"];
+        const random = Math.floor(Math.random() * colors.length);
+        document.body.style.background = colors[random];
+    }
+
+    console.log("Page loaded");
+
+    for (let i = 0; i < 5; i++) {
+        console.log("Loop iteration:", i);
+    }
+</script>
+
+</body>
+</html>
