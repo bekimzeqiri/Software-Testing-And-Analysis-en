@@ -3,7 +3,7 @@
 import math
 import random
 
-def calculate_area(radius)
+def calculate_area(radius):
     return math.pi * radius ** 2
 
 def greet(name):
