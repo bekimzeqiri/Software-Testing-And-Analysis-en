@@ -41,4 +41,4 @@ print(x + y)
 def random_func():
     return random.randint(1, 10)
 
-print(random_func)
+print(random_func())
