@@ -27,7 +27,7 @@ else
 result = divide(10, 2)  # Use a non-zero divisor
 print("Result:", result)
 
-data = {"name": "John", "age": 25}
+data = {"name": "John", "age": 25, "address": "123 Main St"}
 
 print(data["address"])
 
